@@ -1,1 +1,1 @@
-# Sistema--Cadastro-Pratos
+# Sistema-Cadastro-Pratos
