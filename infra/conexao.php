@@ -2,7 +2,7 @@
 
     $host = "localhost";
     $user = "root";
-    $password = "root";
+    $password = "";
     $database = "sistema_prato";
     $porta = "3306";
 

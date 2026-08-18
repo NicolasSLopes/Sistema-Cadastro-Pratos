@@ -80,10 +80,6 @@ $prato = mysqli_query($conexao, "SELECT * FROM prato");
                                 <td>{$row['id_prato']}</td>
                                 <td>{$row['nome_prato']}</td>
                                 <td>{$row['nome_usuario']}</td>
-                                <td>
-                                    <a href="public/editar.php?id=<?php echo $row["id_prato"] ?>">Editar</a>
-                                    <a href="public/excluir.php?id=<?php echo $row["id_prato"] ?>">Excluir</a>
-                                </td>
                               </tr>";
                     }
                     echo "</table>";
