@@ -11,6 +11,7 @@ $prato = mysqli_query($conexao, "SELECT * FROM prato");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
     <title>Cadastro de Pratos</title>
 </head>
 
@@ -22,7 +23,7 @@ $prato = mysqli_query($conexao, "SELECT * FROM prato");
         <section>
             <h2>Cadastro de Usuário</h2>
             <form action="cadastro_usuario.php" method="POST">
-                <label for="nome">Nome:</label>>
+                <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
