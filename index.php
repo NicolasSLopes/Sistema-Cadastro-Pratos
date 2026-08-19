@@ -68,10 +68,16 @@ include "infra/conexao.php";
         <section>
             <h2>Listagem de Pratos</h2>
             <?php
+<<<<<<< HEAD
                 $query = "SELECT p.id_prato, p.nome, p.descricao, p.preco, p.categoria, u.nome AS nome_usuario
                           FROM prato p
                           LEFT JOIN usuario u ON p.id_usuario = u.id_usuario
                           ORDER BY p.id_prato DESC";
+=======
+                $query = "SELECT prato.id_prato, prato.nome AS nome_prato, usuario.nome AS nome_usuario 
+                          FROM prato 
+                          LEFT JOIN usuario ON prato.id_usuario = usuario.id_usuario";
+>>>>>>> b05d1e7d654fa23fb6610b01dc7dd5b9946850a2
                 $result = mysqli_query($conexao, $query);
 
                 if (mysqli_num_rows($result) > 0) {
