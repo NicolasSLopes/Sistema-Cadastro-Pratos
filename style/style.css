@@ -12,11 +12,11 @@ body {
 }
 
 header {
-    background-color: gray;
+    background-color: lightslategray;
     color: white;
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 6px black;
+    box-shadow: 0 4px 6px lightgray;
     margin-bottom: 30px;
 }
 
