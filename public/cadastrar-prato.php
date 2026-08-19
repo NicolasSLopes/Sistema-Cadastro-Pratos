@@ -3,10 +3,10 @@ include "../infra/conexao.php";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $id_usuario = $_POST['id_usuario'] ?? null;
-    $nome = trim($_POST['nome_prato'] ?? '');
-    $descricao = trim($_POST['descricao_prato'] ?? '');
-    $preco = $_POST['preco_prato'] ?? null;
-    $categoria = trim($_POST['categoria_prato'] ?? '');
+    $nome = $_POST['nome_prato'] ?? $_POST['nome'] ?? '';
+    $descricao = $_POST['descricao_prato'] ?? $_POST['descricao'] ?? '';
+    $preco = $_POST['preco_prato'] ?? $_POST['preco'] ?? null;
+    $categoria = $_POST['categoria_prato'] ?? $_POST['categoria'] ?? '';
 
     if (!$id_usuario || $nome === '' || $descricao === '' || $preco === null || $categoria === '') {
         die('Dados incompletos.');

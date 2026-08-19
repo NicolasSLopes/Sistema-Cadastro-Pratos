@@ -69,7 +69,7 @@ include "infra/conexao.php";
         <section>
             <h2>Listagem de Pratos</h2>
             <?php
-                $query = "SELECT prato.id_prato, prato.nome AS nome_prato, usuario.nome AS nome_usuario 
+                $query = "SELECT prato.id_prato, prato.nome, prato.descricao, prato.preco, prato.categoria, usuario.nome AS nome_usuario 
                           FROM prato 
                           LEFT JOIN usuario ON prato.id_usuario = usuario.id_usuario";
                 $result = mysqli_query($conexao, $query);

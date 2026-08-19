@@ -2,8 +2,8 @@
 include "../infra/conexao.php"; 
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $nome = trim($_POST['nome'] ?? '');
-    $email = trim($_POST['email'] ?? '');
+    $nome = $_POST['nome'] ?? '';
+    $email = $_POST['email'] ?? '';
 
     if ($nome === '' || $email === '') {
         die('Dados incompletos.');
