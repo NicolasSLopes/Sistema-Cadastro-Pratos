@@ -4,7 +4,7 @@
     $user = "root";
     $password = "";
     $database = "sistema_prato";
-    $porta = "3306";
+    $porta = 3306;
 
     $conexao = nem mysqli($host, $user, $password, $database, $porta);
 
